@@ -25,6 +25,9 @@ jobs:
     - name: Download built firmware
       uses: actions/upload-artifact@v4
       with:
-        name: blink.bin
+        name: blink-firmware
         path: |
           examples/get-started/blink/build/blink.bin
+          examples/get-started/blink/build/bootloader/bootloader.bin
+          examples/get-started/blink/build/partition_table/partition-table.bin
+          examples/get-started/blink/build/flash_args
